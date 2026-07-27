@@ -33,14 +33,19 @@ insert into tb_pessoa values
  (null, 'Nathaly', '2006-05-08', 'F', 48.76 , 1.58, 'Cuba'),
  (default, 'Luiza', '1988-09-29', 'F', 68.71 , 1.76, default);*/
  
- insert into cursos values
-('1','HTML4','Curso de HTML5','40','37','2014'),
-('2','Algoritmos','Lógica de Programação','20','15','2014'),
-('3','Photoshop','Dicas de Photoshop CC','10','8','2014'),
-('4','PGP','Curso de PHP para iniciantes','40','20','2010'),
-('5','Jarva','Introdução à Linguagem Java','10','29','2000'),
-('6','MySQL','Bancos de Dados MySQL','30','15','2016'),
-('7','Word','Curso completo de Word','40','30','2016'),
-('8','Sapateado','Danças Rítmicas','40','30','2018'),
-('9','Cozinha Árabe','Aprenda a fazer Kibe','40','30','2018'),
-('10','YouTuber','Gerar polêmica e ganhar inscritos','5','2','2018');
+insert into cursos (nome, descricao, carga_horaria, total_aulas, ano) values
+('Lógica de Programação', 'Fundamentos de algoritmos e fluxo de dados.', 40, 20, 2026),
+('HTML5 e CSS3', 'Criação de páginas web estruturadas e estilizadas.', 30, 15, 2026),
+('JavaScript Moderno', 'Manipulação do DOM e desenvolvimento front-end dinâmico.', 50, 25, 2026),
+('Banco de Dados SQL', 'Modelagem relacional e consultas avançadas em MySQL.', 45, 22, 2026),
+('Python para Dados', 'Análise de dados com Pandas, NumPy e visualização.', 60, 30, 2026),
+('Segurança da Informação', 'Criptografia, proteção de redes e ética hacker.', 40, 20, 2026),
+('Desenvolvimento Android', 'Criação de apps nativos utilizando Kotlin.', 70, 35, 2026),
+('Cloud Computing AWS', 'Infraestrutura em nuvem, EC2, S3 e Lambda.', 50, 25, 2026),
+('Inteligência Artificial', 'Redes neurais, machine learning e deep learning.', 80, 40, 2026),
+('DevOps e Docker', 'Containers, integração contínua e entrega automatizada.', 45, 22, 2026),
+('Java OO', 'Programação orientada a objetos e padrões de projeto.', 60, 30, 2026),
+('Redes de Computadores', 'Protocolos TCP/IP, roteamento e infraestrutura.', 50, 25, 2026),
+('Testes de Software', 'Automação de testes, QA e metodologias ágeis.', 35, 18, 2026),
+('UX/UI Design', 'Experiência do usuário e design de interfaces digitais.', 40, 20, 2026),
+('Internet das Coisas', 'Conectividade de dispositivos, sensores e Arduino.', 55, 28, 2026);
