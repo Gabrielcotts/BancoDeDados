@@ -49,4 +49,50 @@ select nome, plano_de_saude from tb_paciente where plano_de_saude in('Premium', 
 -- BETWEEN
 select nome, nascimento from tb_paciente where nascimento between '1980-01-01' and '2000-12-31';
 
+-- DISTINCT
+select distinct plano_de_saude from tb_paciente;
+select distinct plano_de_saude from tb_paciente order by plano_de_saude desc;
+
+-- COUNT
+select count(*) from tb_paciente;
+select count(sexo) from tb_paciente where sexo = 'F';
+select count(sexo) from tb_paciente where sexo = 'M';
+select count(plano_de_saude) from tb_paciente where plano_de_saude = 'Premium';
+select count(ativo) from tb_paciente where ativo = 'S';
+select count(ativo) from tb_paciente where ativo = 'N';
+select count(ativo) from tb_paciente; -- fiz para conferência do total.
+
+-- MAX 
+select max(peso) from tb_paciente;
+select max(altura) from tb_paciente;
+select max(mensalidade) from tb_paciente;
+select mensalidade from tb_paciente order by mensalidade desc limit 1; -- fiz para conferência.
+
+-- MIN
+select min(peso) from tb_paciente;
+select min(altura) from tb_paciente;
+select min(mensalidade) from tb_paciente;
+select mensalidade from tb_paciente order by mensalidade asc limit 1; -- fiz para conferência.
+
+-- AVG 
+select avg(peso) from tb_paciente;
+select avg(altura) from tb_paciente;
+select avg(mensalidade) from tb_paciente;
+
+-- SUM
+select sum(mensalidade) from tb_paciente;
+
+-- GROUP BY
+select plano_de_saude from tb_paciente group by plano_de_saude;
+select plano_de_saude, count(nome) from tb_paciente group by plano_de_saude;
+select sexo, count(nome) from tb_paciente group by sexo;
+
+-- HAVING
+select plano_de_saude, count(nome) from tb_paciente group by plano_de_saude having count(nome) > 5;
+
+
+
+
+
+
 
