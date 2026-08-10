@@ -89,10 +89,3 @@ select sexo, count(nome) from tb_paciente group by sexo;
 
 -- HAVING
 select plano_de_saude, count(nome) from tb_paciente group by plano_de_saude having count(nome) > 5;
-
-
-
-
-
-
-
