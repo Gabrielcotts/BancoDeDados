@@ -13,7 +13,7 @@ CREATE TABLE tb_paciente (
     altura DECIMAL(3 , 2 ) NOT NULL,
     peso DECIMAL(5 , 2 ) NOT NULL,
     telefone VARCHAR(30) NOT NULL,
-    email VARCHAR(150) NOT NULL,
+    email VARCHAR(150) NOT NULL UNIQUE,
     plano_de_saude VARCHAR(80) NOT NULL,
     mensalidade DECIMAL(7 , 2 ) NOT NULL,
     ativo ENUM('S', 'N') DEFAULT 'S'
